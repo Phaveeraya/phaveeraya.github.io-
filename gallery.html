@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery - Phaveeraya Art Studio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fdfaf5;
+            color: #4b3a2f;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            text-align: center;
+            padding: 20px;
+            background-color: #f1eae0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #5a3e36;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+            color: #5a3e36;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+            border: 3px solid #d2b48c;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .lightbox {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.8);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+        }
+        .lightbox img {
+            max-width: 90%;
+            max-height: 80%;
+            border-radius: 8px;
+        }
+        .lightbox:target {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <h1>ผลงานศิลปะ</h1>
+    <div class="gallery">
+        <a href="#F453CFAE-BC87-45D7-90FC-604986A5AC8A.jpeg"><img src="F453CFAE-BC87-45D7-90FC-604986A5AC8A.jpeg" alt="Artwork"></a>
+        <a href="#00E0DE2C-6F09-40D3-9F2D-4593D115BFA5.jpeg"><img src="00E0DE2C-6F09-40D3-9F2D-4593D115BFA5.jpeg" alt="Artwork"></a>
+        <a href="#D01E3350-142D-474B-8DF5-36D195975DFF.jpeg"><img src="D01E3350-142D-474B-8DF5-36D195975DFF.jpeg" alt="Artwork"></a>
+        <a href="#FD24E1B2-F30A-42A5-9E8A-9093AE89E758.jpeg"><img src="FD24E1B2-F30A-42A5-9E8A-9093AE89E758.jpeg" alt="Artwork"></a>
+        <a href="#40053024-6778-4D70-9001-3311204DE903.jpeg"><img src="40053024-6778-4D70-9001-3311204DE903.jpeg" alt="Artwork"></a>
+        <a href="#236613BD-4412-4E78-937F-3F397E0223DC.jpeg"><img src="236613BD-4412-4E78-937F-3F397E0223DC.jpeg" alt="Artwork"></a>
+        <a href="#9F048033-2416-4249-B779-8C003CB9225C.jpeg"><img src="9F048033-2416-4249-B779-8C003CB9225C.jpeg" alt="Artwork"></a>
+        <a href="#1A96A6A4-31C5-4926-B4F9-0579D313B751.jpeg"><img src="1A96A6A4-31C5-4926-B4F9-0579D313B751.jpeg" alt="Artwork"></a>
+        <a href="#3BF74415-6493-4606-807F-C5927B9E0ED8.jpeg"><img src="3BF74415-6493-4606-807F-C5927B9E0ED8.jpeg" alt="Artwork"></a>
+        <a href="#84C64683-987E-48F9-8257-AD2593B8369A.jpeg"><img src="84C64683-987E-48F9-8257-AD2593B8369A.jpeg" alt="Artwork"></a>
+
+    </div>
+
+    <div id="F453CFAE-BC87-45D7-90FC-604986A5AC8A.jpeg" class="lightbox" onclick="location.href='gallery.html'">
+        <img src="F453CFAE-BC87-45D7-90FC-604986A5AC8A.jpeg" alt="Artwork Enlarged">
+    </div>
+    
+    <div id="00E0DE2C-6F09-40D3-9F2D-4593D115BFA5.jpeg" class="lightbox" onclick="location.href='gallery.html'">
+        <img src="00E0DE2C-6F09-40D3-9F2D-4593D115BFA5.jpeg" alt="Artwork Enlarged">
+    </div>
+    
+    <div id="D01E3350-142D-474B-8DF5-36D195975DFF.jpeg" class="lightbox" onclick="location.href='gallery.html'">
+        <img src="D01E3350-142D-474B-8DF5-36D195975DFF.jpeg" alt="Artwork Enlarged">
+    </div>
+    
+    <div id="FD24E1B2-F30A-42A5-9E8A-9093AE89E758.jpeg" class="lightbox" onclick="location.href='gallery.html'">
+        <img src="FD24E1B2-F30A-42A5-9E8A-9093AE89E758.jpeg" alt="Artwork Enlarged">
+    </div>
+    
+    <div id="40053024-6778-4D70-9001-3311204DE903.jpeg" class="lightbox" onclick="location.href='gallery.html'">
+        <img src="40053024-6778-4D70-9001-3311204DE903.jpeg" alt="Artwork Enlarged">
+    </div>
+    
+    <div id="236613BD-4412-4E78-937F-3F397E0223DC.jpeg" class="lightbox" onclick="location.href='gallery.html'">
+        <img src="236613BD-4412-4E78-937F-3F397E0223DC.jpeg" alt="Artwork Enlarged">
+    </div>
+    
+    <div id="9F048033-2416-4249-B779-8C003CB9225C.jpeg" class="lightbox" onclick="location.href='gallery.html'">
+        <img src="9F048033-2416-4249-B779-8C003CB9225C.jpeg" alt="Artwork Enlarged">
+    </div>
+    
+    <div id="1A96A6A4-31C5-4926-B4F9-0579D313B751.jpeg" class="lightbox" onclick="location.href='gallery.html'">
+        <img src="1A96A6A4-31C5-4926-B4F9-0579D313B751.jpeg" alt="Artwork Enlarged">
+    </div>
+    
+    <div id="3BF74415-6493-4606-807F-C5927B9E0ED8.jpeg" class="lightbox" onclick="location.href='gallery.html'">
+        <img src="3BF74415-6493-4606-807F-C5927B9E0ED8.jpeg" alt="Artwork Enlarged">
+    </div>
+    
+    <div id="84C64683-987E-48F9-8257-AD2593B8369A.jpeg" class="lightbox" onclick="location.href='gallery.html'">
+        <img src="84C64683-987E-48F9-8257-AD2593B8369A.jpeg" alt="Artwork Enlarged">
+    </div>
+    
+</body>
+</html>
